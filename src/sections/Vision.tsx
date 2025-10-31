@@ -26,7 +26,7 @@ const Vision = () => {
     <section className="py-24 ">
       <div className="container">
         <div className="flex justify-center">
-          <Tag variant="light">Our Vision</Tag>
+          <Tag>Our Vision</Tag>
         </div>
 
         <h2 className="mt-8 max-w-5xl mx-auto text-center text-5xl md:text-6xl font-light leading-tight text-gray-900">

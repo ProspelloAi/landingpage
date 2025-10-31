@@ -57,14 +57,6 @@ export default function Process() {
   const ref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
-  const lineVariants = {
-    hidden: { pathLength: 0 },
-    visible: {
-      pathLength: 1,
-      transition: { duration: 2, ease: "easeInOut" },
-    },
-  };
-
   return (
     <section id="process" ref={ref} className="py-24 ">
       <div className="container max-w-6xl">
@@ -105,7 +97,6 @@ export default function Process() {
               strokeWidth="3"
               initial="hidden"
               animate={isInView ? "visible" : "hidden"}
-              variants={lineVariants}
               style={{ willChange: "pathLength" }}
             />
           </svg>
