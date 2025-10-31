@@ -136,8 +136,8 @@ const Footer = () => {
                 <div className="flex items-center gap-3">
                   <MapPin className="w-5 h-5 text-lime-400" />
                   <span>
-                    3rd Floor, Moh'd Ibrahim Siddiqi Building <br />- opposite
-                    Spinneys - Dubai
+                    3rd Floor, Moh&apos;d Ibrahim Siddiqi Building <br />-
+                    opposite Spinneys - Dubai
                   </span>
                 </div>
                 <div className="flex items-center gap-3">
