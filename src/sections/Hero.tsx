@@ -114,7 +114,7 @@ const Hero = () => {
               ✨ Tech Company
             </div>
           </div>
-          <div className="relative z-10">
+          {/* <div className="relative z-10">
             <h1 className="text-6xl md:text-7xl lg:text-[5.8rem] font-medium text-center mt-6 bg-gradient-to-r from-gray-700 via-gray-800 to-gray-700 bg-clip-text text-transparent">
               Empowering Innovation. Delivering Scalable Technology.
             </h1>
@@ -132,6 +132,32 @@ const Hero = () => {
               <button className="group bg-gray-700 text-white px-6 py-2 rounded-full flex items-center gap-3 hover:bg-gray-800 transition-all shadow-lg hover:shadow-xl">
                 <span className="font-medium">Start Now</span>
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </button>
+            </form>
+          </div> */}
+          <div className="relative z-10 mt-6 text-center">
+            <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-[5.5rem] font-medium leading-tight bg-gradient-to-r from-gray-700 via-gray-800 to-gray-700 bg-clip-text text-transparent">
+              Empowering Innovation. Delivering Scalable Technology.
+            </h1>
+            <p className="text-center text-base sm:text-lg md:text-xl text-gray-600 mt-6 max-w-2xl mx-auto">
+              We&apos;re a Dubai-based technology company building
+              next-generation digital products, cloud solutions, and AI-driven
+              platforms that accelerate business growth and efficiency.
+            </p>
+
+            {/* Email Input */}
+            <form className="flex flex-col sm:flex-row items-stretch justify-center gap-3 border border-gray-800/20 focus-within:border-lime-400 bg-white/10 backdrop-blur-xl rounded-2xl sm:rounded-full p-2 mt-8 w-full max-w-lg mx-auto transition-all duration-300">
+              <input
+                type="email"
+                placeholder="Enter your email"
+                className="flex-1 bg-transparent px-5 py-3 text-gray-800 placeholder-gray-500 focus:outline-none text-base rounded-full min-w-0"
+              />
+              <button
+                type="submit"
+                className="group flex items-center justify-center whitespace-nowrap bg-gradient-to-r from-gray-700 to-gray-700 text-white px-8 py-3 rounded-full font-semibold text-base shadow-md hover:shadow-xl transition-all duration-300 hover:scale-[1.02] active:scale-[0.98]"
+              >
+                <span>Start Now</span>
+                <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </button>
             </form>
           </div>
@@ -167,7 +193,6 @@ const Hero = () => {
                   className="object-cover"
                   priority
                 />
-
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
               </div>
             </div>

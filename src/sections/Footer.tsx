@@ -1,37 +1,3 @@
-// import logo from "@/assets/images/logo.svg";
-// import Image from "next/image";
-
-// const footerLinks = [
-//   { href: "#", label: "Contact" },
-//   { href: "#", label: "Privacy Policy" },
-//   { href: "#", label: "Terms & Conditions" },
-// ];
-
-// const Footer = () => {
-//   return (
-//     <footer className="py-16">
-//       <div className="container">
-//         <div className="flex flex-col md:flex-row items-center md:justify-between gap-6">
-//           <div>
-//             <Image src={logo} alt="logo" />
-//           </div>
-//           <div>
-//             <nav className="flex gap-6">
-//               {footerLinks.map(({ href, label }) => (
-//                 <a key={label} href={href} className="text-gray-800 text-sm">
-//                   {label}
-//                 </a>
-//               ))}
-//             </nav>
-//           </div>
-//         </div>
-//       </div>
-//     </footer>
-//   );
-// };
-
-// export default Footer;
-
 "use client";
 
 import Image from "next/image";
@@ -55,7 +21,7 @@ const Footer = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission (e.g., send to API)
+
     console.log("Form submitted:", formData);
     alert("Thank you! We'll get back to you soon.");
     setFormData({ name: "", company: "", email: "", message: "" });
@@ -67,7 +33,6 @@ const Footer = () => {
     <footer className=" py-16 border-t border-gray-200">
       <div className="container">
         <div className="grid lg:grid-cols-2 gap-12">
-          {/* LEFT: Contact Form */}
           <div>
             <h2 className="text-4xl md:text-5xl font-medium text-gray-900 mb-8">
               Let’s Build the <span className="text-lime-400">Future</span>{" "}
@@ -125,9 +90,7 @@ const Footer = () => {
             </form>
           </div>
 
-          {/* RIGHT: Contact Info + Links */}
           <div className="space-y-12">
-            {/* Contact Info */}
             <div>
               <h3 className="text-lg font-semibold text-gray-900 mb-6">
                 Contact Us
@@ -167,7 +130,6 @@ const Footer = () => {
               </div>
             </div>
 
-            {/* Footer Links */}
             <div className="flex flex-col md:flex-row md:justify-between items-start md:items-center gap-6 pt-8 border-t border-gray-200">
               <div>
                 <Image src={logo} alt="tech" width={140} height={40} />
@@ -186,7 +148,6 @@ const Footer = () => {
               </nav>
             </div>
 
-            {/* Copyright */}
             <div className="text-sm text-gray-500 text-center md:text-left">
               © {currentYear} tech. All Rights Reserved.
             </div>
