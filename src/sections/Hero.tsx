@@ -99,44 +99,20 @@ const Hero = () => {
             ref={leftPointerScope}
             initial={{ opacity: 0, y: 100, x: -200 }}
             className="hidden lg:block absolute left-56 top-96 z-20"
-          >
-            {/* <Pointer name="Andrea" /> */}
-          </motion.div>
+          ></motion.div>
           <motion.div
             ref={rightPointerScope}
             initial={{ opacity: 0, x: 275, y: 100 }}
             className="hidden lg:block absolute right-80 -top-4 z-20"
-          >
-            {/* <Pointer name="Bryan" color="red" /> */}
-          </motion.div>
+          ></motion.div>
           <div className="flex justify-center">
             <div className="inline-flex py-1 px-3 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full text-neutral-950 font-semibold">
               ✨ Tech Company
             </div>
           </div>
-          {/* <div className="relative z-10">
-            <h1 className="text-6xl md:text-7xl lg:text-[5.8rem] font-medium text-center mt-6 bg-gradient-to-r from-gray-700 via-gray-800 to-gray-700 bg-clip-text text-transparent">
-              Empowering Innovation. Delivering Scalable Technology.
-            </h1>
-            <p className="text-center text-xl text-gray-600 mt-8 max-w-2xl mx-auto">
-              We&apos;re a Dubai-based technology company building
-              next-generation digital products, cloud solutions, and AI-driven
-              platforms that accelerate business growth and efficiency.
-            </p>
-            <form className="flex border border-gray-800/20 focus-within:border-lime-400 bg-white/5 backdrop-blur-sm rounded-full p-2 mt-8 max-w-lg mx-auto transition-colors">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="bg-transparent px-4 md:flex-1 w-full focus-within:outline-none text-gray-700 rounded-full placeholder:text-gray-500"
-              />
-              <button className="group bg-gray-700 text-white px-6 py-2 rounded-full flex items-center gap-3 hover:bg-gray-800 transition-all shadow-lg hover:shadow-xl">
-                <span className="font-medium">Start Now</span>
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </button>
-            </form>
-          </div> */}
+
           <div className="relative z-10 mt-6 text-center">
-            <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-[5.5rem] font-medium leading-tight bg-gradient-to-r from-gray-700 via-gray-800 to-gray-700 bg-clip-text text-transparent">
+            <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-[5.5rem] font-medium leading-tight text-gray-700">
               Empowering Innovation. Delivering Scalable Technology.
             </h1>
             <p className="text-center text-base sm:text-lg md:text-xl text-gray-600 mt-6 max-w-2xl mx-auto">
@@ -145,7 +121,6 @@ const Hero = () => {
               platforms that accelerate business growth and efficiency.
             </p>
 
-            {/* Email Input */}
             <form className="flex flex-col sm:flex-row items-stretch justify-center gap-3 border border-gray-800/20 focus-within:border-lime-400 bg-white/10 backdrop-blur-xl rounded-2xl sm:rounded-full p-2 mt-8 w-full max-w-lg mx-auto transition-all duration-300">
               <input
                 type="email"
