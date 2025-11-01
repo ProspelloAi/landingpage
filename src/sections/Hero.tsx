@@ -65,7 +65,7 @@ const Hero = () => {
   return (
     <>
       <section
-        className="py-24 overflow-x-clip relative"
+        className="py-16 overflow-x-clip relative"
         style={{ cursor: `url(${cursorImg.src}), auto` }}
       >
         <div className="container relative z-10">
